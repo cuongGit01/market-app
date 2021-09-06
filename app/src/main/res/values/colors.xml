@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
 <!--  custom color  -->
-    <color name="txt">#E51313</color>
+    <color name="txt">#FF8A00</color>
     <color name="edt">#EFF3F5</color>
+    <color name="bg_fb">#408FF7</color>
 </resources>
