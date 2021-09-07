@@ -7,6 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.marketapp.models.ServerRequest;
+import com.example.marketapp.models.ServerRespone;
+import com.example.marketapp.models.User;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -19,6 +30,7 @@ public class RegistrationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registration);
 
         progressBar = (ProgressBar) findViewById(R.id.progressbar);
+        progressBar.setVisibility(View.GONE);
         tvSignin = (TextView) findViewById(R.id.tv_signin);
 
         tvSignin.setOnClickListener(new View.OnClickListener() {

@@ -5,13 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
 
 public class LoginActivity extends AppCompatActivity {
 
     TextView tvSignup;
     ProgressBar progressBar;
+    String URL = "http://192.168.1.4/login/login.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
